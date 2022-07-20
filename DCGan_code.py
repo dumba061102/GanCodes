@@ -1,14 +1,14 @@
-!pip install tensorflow-gpu==2.0.0-rc1
-import tensorflow as tf
-tf.__version__
-!pip install imageio
+!pip install tensorflow-gpu==2.0.0-rc1 # 텐서플로우 설치
+import tensorflow as tf # 텐서플로우 불러우기
+tf.__version__ #텐서플로우 버전 확인
+!pip install imageio # GIF 만들기 위한 라이브러리
 
-import glob
-import imageio
-import matplotlib.pyplot as plt
-import numpy as np
-import os
-import PIL
+import glob # GIF 생성에 쓰는 라이브러리 (사용 X)
+import imageio # GIF 라이브러리 불러오기
+import matplotlib.pyplot as plt # 그래프 그리기
+import numpy as np # 벡터, 행렬연산에 있어서 편의를 주는 라이브러리 (numpy)
+import os # 운영체제에서 제공되는 여러 기능을 파이썬에서 수행할 수 있게 해주는 라이브러리
+import PIL # GIF 생성에 쓰는 라이브러리 (사용 X)
 from tensorflow.keras import layers
 import time
 
